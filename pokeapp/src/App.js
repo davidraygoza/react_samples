@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
+import Title from './components/Title';
 class App extends Component {
   suma(){
     return <p>{10+2}</p>;
@@ -11,9 +11,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Hello world - Hola Mundo
-          </p>
+          <Title />
           <p>{this.suma()}</p>
           <a
             className="App-link"
