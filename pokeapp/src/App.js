@@ -3,6 +3,9 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  suma(){
+    return <p>{10+2}</p>;
+  }
   render() {
     return (
       <div className="App">
@@ -11,6 +14,7 @@ class App extends Component {
           <p>
             Hello world - Hola Mundo
           </p>
+          <p>{this.suma()}</p>
           <a
             className="App-link"
             href="https://reactjs.org"
