@@ -11,7 +11,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <Title />
+          <Title nameDeveloper="David I. Raygoza" profileDeveloper="FrontEnd Developer" linkedinProfile="https://www.linkedin.com/in/davidraygoza/"/>
           <p>{this.suma()}</p>
           <a
             className="App-link"
