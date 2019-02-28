@@ -11,12 +11,18 @@ class App extends Component {
     this.state = {
       counter : 0
     }
-    setInterval(()=>{
+  }
+  aumentar(){
       this.setState({
         counter : this.state.counter + 1
       })
-    }, 1000)
   }
+  reiniciar(){
+    this.setState({
+      counter : 0
+    })
+  }
+
   render() {
     return (
       <div className="App">
@@ -35,6 +41,10 @@ class App extends Component {
           </a>
         </header>
         <h1>{this.state.counter}</h1>
+        <h2>Dame click</h2>
+        <button onClick={()=>{this.aumentar()}}> Presiona</button>
+        <button onClick={()=>{this.reiniciar()}}> Reiniciar</button>
+
       </div>
     );
   }
